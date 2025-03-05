@@ -1,154 +1,155 @@
-# ServicePro: Professional Services Management System
+# ServicePro: ระบบจัดการบริการมืออาชีพ
 
-![ServicePro Logo](https://via.placeholder.com/1200x400?text=ServicePro)
+![โลโก้ ServicePro](https://via.placeholder.com/1200x400?text=ServicePro)
 
-## Overview
+## ภาพรวม
 
-ServicePro is a comprehensive services management platform built with React, TypeScript, and Tailwind CSS. It's designed for businesses offering cleaning services, technical maintenance, and other professional services, providing an intuitive interface for customers to browse, book, and manage service appointments.
+ServicePro เป็นแพลตฟอร์มการจัดการบริการที่ครบวงจร สร้างด้วย React, TypeScript และ Tailwind CSS ออกแบบมาสำหรับธุรกิจที่ให้บริการทำความสะอาด บริการซ่อมบำรุง และบริการมืออาชีพอื่นๆ มอบอินเตอร์เฟซที่ใช้งานง่ายสำหรับลูกค้าในการเลือกดู จอง และจัดการนัดหมายบริการ
 
-## 🌟 Features
+## 🌟 คุณสมบัติ
 
-- **Service Categories Management**: Browse and book services across multiple categories
-- **Interactive Service Booking**: Easy-to-use interface for scheduling services
-- **Shopping Cart System**: Add services to cart and proceed to checkout
-- **Real-time Notifications**: Stay updated with service status changes
-- **Face Authentication (Optional)**: Advanced user verification using face recognition
-- **Live Chat Support**: Get assistance through the integrated chat system
-- **Interactive Service Demos**: Explore service features through interactive demonstrations
-- **Responsive Design**: Full functionality across desktop and mobile devices
-- **Multi-language Support**: Interface available in multiple languages including Thai & English
-- **User Authentication**: Secure login and account management
+- **การจัดการหมวดหมู่บริการ**: เลือกดูและจองบริการจากหลากหลายหมวดหมู่
+- **การจองบริการแบบโต้ตอบ**: อินเตอร์เฟซที่ใช้งานง่ายสำหรับการจองบริการ
+- **ระบบตะกร้าสินค้า**: เพิ่มบริการลงตะกร้าและดำเนินการชำระเงิน
+- **การแจ้งเตือนแบบเรียลไทม์**: รับการอัพเดทสถานะบริการ
+- **การยืนยันตัวตนด้วยใบหน้า (ตัวเลือกเสริม)**: การตรวจสอบผู้ใช้ขั้นสูงด้วยการจดจำใบหน้า
+- **ระบบแชทสด**: รับความช่วยเหลือผ่านระบบแชทในตัว
+- **สาธิตบริการแบบโต้ตอบ**: สำรวจคุณสมบัติบริการผ่านการสาธิตแบบโต้ตอบ
+- **การออกแบบที่ตอบสนอง**: ฟังก์ชันการทำงานครบถ้วนทั้งบนเดสก์ท็อปและมือถือ
+- **รองรับหลายภาษา**: อินเตอร์เฟซมีให้เลือกหลายภาษารวมถึงไทยและอังกฤษ
+- **การยืนยันตัวตนผู้ใช้**: การเข้าสู่ระบบและการจัดการบัญชีที่ปลอดภัย
 
-## 🛠️ Technologies
+## 🛠️ เทคโนโลยี
 
-- **Front-end**: React 18, TypeScript
-- **Styling**: Tailwind CSS
-- **State Management**: React Context API
-- **Face Recognition**: face-api.js (optional feature)
-- **Package Manager**: npm/vite
-- **Development Environment**: Vite
+- **ฟรอนต์เอนด์**: React 18, TypeScript
+- **การจัดแต่งสไตล์**: Tailwind CSS
+- **การจัดการสถานะ**: React Context API
+- **การจดจำใบหน้า**: face-api.js (คุณสมบัติเสริม)
+- **ตัวจัดการแพ็คเกจ**: npm/vite
+- **สภาพแวดล้อมการพัฒนา**: Vite
 
-## 🚀 Getting Started
+## 🚀 เริ่มต้นใช้งาน
 
-### Prerequisites
+### ความต้องการเบื้องต้น
 
-- Node.js (v14 or newer)
-- npm or yarn
+- Node.js (v14 หรือใหม่กว่า)
+- npm หรือ yarn
 
-### Installation
+### การติดตั้ง
 
-1. Clone the repository:
+1. โคลนที่เก็บโค้ด:
 ```bash
 git clone https://github.com/yourusername/service-pro.git
 cd service-pro
 ```
 
-2. Install dependencies:
+2. ติดตั้งการพึ่งพา:
 ```bash
 npm install
 ```
 
-3. (Optional) To enable face authentication features:
+3. (ตัวเลือก) เพื่อเปิดใช้งานคุณสมบัติการยืนยันตัวตนด้วยใบหน้า:
 ```bash
 sh install-face-api.sh
 ```
 
-4. Start the development server:
+4. เริ่มเซิร์ฟเวอร์สำหรับการพัฒนา:
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:5173](http://localhost:5173) in your browser.
+5. เปิด [http://localhost:5173](http://localhost:5173) ในเบราว์เซอร์ของคุณ
 
-## 📋 Project Structure
+## 📋 โครงสร้างโปรเจค
 
 ```
 project/
-├── public/             # Static files and assets
-├── src/                # Source files
-│   ├── components/     # React components
-│   │   ├── face/       # Face authentication components
-│   │   ├── chat/       # Chat support components
-│   │   └── checkout/   # Checkout flow components
-│   ├── context/        # React context definitions
-│   ├── data/           # JSON data files
-│   ├── pages/          # Page components
-│   ├── utils/          # Utility functions
-│   ├── App.tsx         # Main application component
-│   └── main.tsx        # Application entry point
-├── tailwind.config.js  # Tailwind CSS configuration
-├── package.json        # Project dependencies
-└── README.md           # Project documentation
+├── public/             # ไฟล์และทรัพยากรคงที่
+├── src/                # ไฟล์ซอร์สโค้ด
+│   ├── components/     # คอมโพเนนต์ React
+│   │   ├── face/       # คอมโพเนนต์การยืนยันตัวตนด้วยใบหน้า
+│   │   ├── chat/       # คอมโพเนนต์ระบบแชท
+│   │   └── checkout/   # คอมโพเนนต์ขั้นตอนการชำระเงิน
+│   ├── context/        # นิยาม React context
+│   ├── data/          # ไฟล์ข้อมูล JSON
+│   ├── pages/         # คอมโพเนนต์หน้า
+│   ├── utils/         # ฟังก์ชันยูทิลิตี้
+│   ├── App.tsx        # คอมโพเนนต์หลักของแอพ
+│   └── main.tsx       # จุดเริ่มต้นของแอพพลิเคชัน
+├── tailwind.config.js  # การตั้งค่า Tailwind CSS
+├── package.json       # การพึ่งพาของโปรเจค
+└── README.md          # เอกสารประกอบโปรเจค
 ```
 
-## 💡 Usage
+## 💡 วิธีใช้งาน
 
-### Service Browsing
+### การเลือกดูบริการ
 
-Navigate through different service categories using the top navigation menu. Each service card displays key information including price, description, and available options.
+เลือกดูหมวดหมู่บริการต่างๆ ผ่านเมนูนำทางด้านบน แต่ละการ์ดบริการแสดงข้อมูลสำคัญรวมถึงราคา คำอธิบาย และตัวเลือกที่มี
 
-### Booking a Service
+### การจองบริการ
 
-1. Select a service category
-2. Choose the specific service you need
-3. Configure service options if applicable
-4. Click "Add to Cart" 
-5. Proceed to checkout when ready
+1. เลือกหมวดหมู่บริการ
+2. เลือกบริการที่คุณต้องการ
+3. กำหนดค่าตัวเลือกบริการถ้ามี
+4. คลิก "เพิ่มลงตะกร้า"
+5. ดำเนินการชำระเงินเมื่อพร้อม
 
-### Face Authentication
+### การยืนยันตัวตนด้วยใบหน้า
 
-The face authentication feature provides an additional layer of security for service bookings:
+คุณสมบัติการยืนยันตัวตนด้วยใบหน้าให้ความปลอดภัยเพิ่มเติมสำหรับการจองบริการ:
 
-1. Click the "Face ID" button in the navigation bar
-2. Allow camera access when prompted
-3. Position your face within the frame
-4. Wait for verification to complete
+1. คลิกปุ่ม "Face ID" ในแถบนำทาง
+2. อนุญาตการเข้าถึงกล้องเมื่อได้รับแจ้ง
+3. จัดตำแหน่งใบหน้าของคุณในกรอบ
+4. รอให้การตรวจสอบเสร็จสิ้น
 
-Note: First-time users need to register their face by accessing their profile settings.
+หมายเหตุ: ผู้ใช้ครั้งแรกต้องลงทะเบียนใบหน้าโดยเข้าถึงการตั้งค่าโปรไฟล์
 
-### Chat Support
+### ระบบแชทช่วยเหลือ
 
-Need assistance? Use our integrated chat support:
+ต้องการความช่วยเหลือ? ใช้ระบบแชทในตัวของเรา:
 
-1. Click the chat button in the bottom right corner
-2. Type your query or select from suggested topics
-3. Receive real-time assistance from our support team
+1. คลิกปุ่มแชทที่มุมขวาล่าง
+2. พิมพ์คำถามหรือเลือกจากหัวข้อที่แนะนำ
+3. รับความช่วยเหลือแบบเรียลไทม์จากทีมสนับสนุนของเรา
 
-## 📷 Screenshots
+## 📷 ภาพหน้าจอ
 
-![Home Page](https://via.placeholder.com/800x450?text=Home+Page)
-![Services Page](https://via.placeholder.com/800x450?text=Services+Page)
-![Chat Support](https://via.placeholder.com/800x450?text=Chat+Support)
-![Face Authentication](https://via.placeholder.com/800x450?text=Face+Authentication)
+![หน้าหลัก](https://via.placeholder.com/800x450?text=หน้าหลัก)
+![หน้าบริการ](https://via.placeholder.com/800x450?text=หน้าบริการ)
+![ระบบแชท](https://via.placeholder.com/800x450?text=ระบบแชท)
+![การยืนยันตัวตนด้วยใบหน้า](https://via.placeholder.com/800x450?text=การยืนยันตัวตนด้วยใบหน้า)
 
-## 🧰 Advanced Configuration
+## 🧰 การกำหนดค่าขั้นสูง
 
-### Environment Variables
+### ตัวแปรสภาพแวดล้อม
 
-Create a `.env` file in the root directory:
+สร้างไฟล์ `.env` ในไดเรกทอรีราก:
 
 ```
 VITE_API_URL=your_api_url
 VITE_FACE_API_MODEL_PATH=path_to_models
 ```
 
-### Face API Models
+### โมเดล Face API
 
-If using the face authentication feature, download the required models:
+หากใช้คุณสมบัติการยืนยันตัวตนด้วยใบหน้า ให้ดาวน์โหลดโมเดลที่จำเป็น:
 
 ```bash
 mkdir -p public/models
-# Download models from https://github.com/justadudewhohacks/face-api.js/tree/master/weights
-# Place them in the public/models directory
+# ดาวน์โหลดโมเดลจาก https://github.com/justadudewhohacks/face-api.js/tree/master/weights
+# วางไว้ในไดเรกทอรี public/models
 ```
 
-## 📝 License
+## 📝 ลิขสิทธิ์
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+โปรเจคนี้ได้รับอนุญาตภายใต้ MIT License - ดูรายละเอียดในไฟล์ LICENSE
 
-## 🙏 Acknowledgements
+## 🙏 กิตติกรรมประกาศ
 
-- [Tailwind CSS](https://tailwindcss.com/) for the styling framework
-- [Face-api.js](https://github.com/justadudewhohacks/face-api.js/) for face recognition functionality
-- [React](https://reactjs.org/) for the UI library
-- [Vite](https://vitejs.dev/) for the build tool and development environment
+- [Tailwind CSS](https://tailwindcss.com/) สำหรับเฟรมเวิร์กการจัดแต่งสไตล์
+- [Face-api.js](https://github.com/justadudewhohacks/face-api.js/) สำหรับฟังก์ชันการจดจำใบหน้า
+- [React](https://reactjs.org/) สำหรับไลบรารี UI
+- [Vite](https://vitejs.dev/) สำหรับเครื่องมือบิลด์และสภาพแวดล้อมการพัฒนา
+
