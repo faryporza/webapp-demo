@@ -39,8 +39,8 @@ ServicePro เป็นแพลตฟอร์มการจัดการบ
 
 1. โคลนที่เก็บโค้ด:
 ```bash
-git clone https://github.com/yourusername/service-pro.git
-cd service-pro
+git clone [https://github.com/yourusername/service-pro.git](https://github.com/faryporza/webapp-demo.git)
+cd webapp-demo
 ```
 
 2. ติดตั้งการพึ่งพา:
